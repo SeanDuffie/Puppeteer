@@ -1,6 +1,6 @@
 <?php
 // (A) GET IMAGE INFO
-$file = "resources/clip.avi";
+$file = "resources/time-lapse.mp4";
 $type = 'video/mpeg';
 
 // (B) OUTPUT HTTP HEADERS

@@ -27,15 +27,11 @@
     <!-- // Web Page Heading -->
     <body>
         <h1>ESP8266 Web Server</h1>
-        <img src="read_image.php"/>
-        <video width="1920" height="1080" controls autoplay>
-            <source src="resources/clip.avi" type="video/avi">
-            Sorry, your browser doesn't support the video element.
+        <!-- <img src="read_image.php"/> -->
+        <video autoplay controls loop src="resources/time-lapse.mp4" poster="read_image.php" width="100%" height="900">
+            <!-- <embed type="video/mp4" autoplay loop src="resources/sample.mp4" width="100%" height="900"> -->
+            <!-- <source src="resources/time-lapse.mp4" type="video/mp4>"> -->
+            Your browser does not support the the video tag.
         </video>
-        <!-- <video width="320" height="240" controls autoplay>
-            <object data="resources/clip.avi" width="320" height="240">
-                <embed width="320" height="240" src="resources/clip.avi">
-            </object>
-        </video> -->
     </body>
 </html>
