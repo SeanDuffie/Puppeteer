@@ -1,0 +1,6 @@
+# Certificates
+*.key
+*.pem
+*.crt
+*.csr
+*.ext
