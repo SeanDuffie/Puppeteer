@@ -27,10 +27,10 @@
     $output3 = 25;
 
     /** FIXME: I need these variables to be read from the nodes directly, not through  **/
-    $output0State = "OFF";
-    $output1State = "OFF";
-    $output2State = "OFF";
-    $output3State = "OFF";
+    $output0State = getPin($URL, $output0);
+    $output1State = getPin($URL, $output1);
+    $output2State = getPin($URL, $output2);
+    $output3State = getPin($URL, $output3);
 
     echo "<!DOCTYPE html><html>\n";
         echo "<head>\n";
@@ -51,28 +51,28 @@
         
             /** Handle Button Inputs **/
             if (array_key_exists($output0, $_POST)) {
-                if ($output0State == "ON") { $output0State = "OFF"; }
-                elseif ($output0State == "OFF") { $output0State = "ON"; }
+                if (str_contains($output0State, "ON")) { $output0State = "OFF"; }
+                elseif (str_contains($output0State, "OFF")) { $output0State = "ON"; }
                 else { echo "ERROR WITH $output0!\n"; }
-                get($URL, 0, $output0State);
+                get($URL, $output0, $output0State);
             }
             else if (array_key_exists($output1, $_POST)) {
-                if ($output1State == "ON") { $output1State = "OFF"; }
-                elseif ($output1State == "OFF") { $output1State = "ON"; }
+                if (str_contains($output1State, "ON")) { $output1State = "OFF"; }
+                elseif (str_contains($output1State, "OFF")) { $output1State = "ON"; }
                 else { echo "ERROR WITH $output1!\n"; }
-                get($URL, 1, $output1State);
+                get($URL, $output1, $output1State);
             }
             else if (array_key_exists($output2, $_POST)) {
-                if ($output2State == "ON") { $output2State = "OFF"; }
-                elseif ($output2State == "OFF") { $output2State = "ON"; }
+                if (str_contains($output2State, "ON")) { $output2State = "OFF"; }
+                elseif (str_contains($output2State, "OFF")) { $output2State = "ON"; }
                 else { echo "ERROR WITH $output2!\n"; }
-                get($URL, 2, $output2State);
+                get($URL, $output2, $output2State);
             }
             else if (array_key_exists($output3, $_POST)) {
-                if ($output3State == "ON") { $output3State = "OFF"; }
-                elseif ($output3State == "OFF") { $output3State = "ON"; }
+                if (str_contains($output3State, "ON")) { $output3State = "OFF"; }
+                elseif (str_contains($output3State, "OFF")) { $output3State = "ON"; }
                 else { echo "ERROR WITH $output3!\n"; }
-                get($URL, 3, $output3State);
+                get($URL, $output3, $output3State);
             }
 
             /** Display Button Forms to HTML */
