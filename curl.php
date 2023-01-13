@@ -14,7 +14,7 @@ function getpin($url, $pin) {
     return $server_output;
 }
 
-function get($url, $pin, $state) {
+function setPin($url, $pin, $state) {
     $ch = curl_init();
 
     curl_setopt($ch, CURLOPT_URL, "$url/$pin/$state");
