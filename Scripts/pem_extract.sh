@@ -1,10 +1,11 @@
-#!/bin/bashTCI
+#!/bin/bash
+cd ../Certificates
 
-TCI="tamuartists_tci"
-INT="tamuartists_int_dv"
-RT="tamuartists_root_ca2"
+CHAIN="sduffie"
 
-cd ./Certificates
+TCI="$CHAIN-tci"
+INT="$CHAIN-int_dv"
+RT="$CHAIN-root_ca2"
 
 # Extract .key from .pem
 # openssl rsa -in $TCI.pem -out $TCI.key
