@@ -2,11 +2,11 @@
 <html>
     <head>
 		<!-- Text displayed on the tab -->
-		<title>ESP8266 Node Hub | TAMU Artists</title>
+		<title>ESP8266 Node Hub | Kaldi</title>
 		<!-- Default for all links of the page -->
 		<base href="./index.html">
 		<!-- Webpage title bar icon -->
-		<link rel="icon" href="./resources/artists.jpg" type="image/x-icon">
+		<link rel="icon" href="./resources/server-icon.jpg" type="image/x-icon">
         <!-- Metadata -->
 		<meta charset="UTF-8">
 		<meta name="description" content="ESP8266 Node Hub">
