@@ -2,6 +2,16 @@
 
 The webserver that will run on a raspberry pi and control the interface between my smart devices and the rest of the world
 
+## Future Features
+
+- [ ] SSL certificate for JavaScript
+- [ ] Redesign HTML for new backend
+- [ ] Webhooks for JavaScript
+- [ ] Set up Github runner on RPi for automatic updates
+    - https://www.digitalocean.com/community/tutorials/how-to-use-git-hooks-to-automate-development-and-deployment-tasks
+- [ ] Allow selections of different nodes
+
+
 ## Setup Apache2 Server
 
 - TODO:
